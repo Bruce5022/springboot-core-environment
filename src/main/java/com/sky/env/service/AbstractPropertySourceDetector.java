@@ -1,5 +1,6 @@
-package com.sky.env;
+package com.sky.env.service;
 
+import com.sky.env.service.PropertySourceDetector;
 import org.springframework.core.env.ConfigurableEnvironment;
 import org.springframework.core.env.MutablePropertySources;
 import org.springframework.core.env.PropertySource;

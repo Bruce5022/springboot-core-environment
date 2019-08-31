@@ -1,5 +1,10 @@
-package com.sky.env;
+package com.sky.env.config;
 
+import com.sky.env.service.AbstractPropertySourceDetector;
+import com.sky.env.service.impl.JsonPropertySourceDetector;
+import com.sky.env.service.impl.PropertiesPropertySourceDetector;
+import com.sky.env.service.impl.PropertySourceDetectorComposite;
+import com.sky.env.service.impl.YamlPropertySourceDetector;
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.context.annotation.ImportBeanDefinitionRegistrar;

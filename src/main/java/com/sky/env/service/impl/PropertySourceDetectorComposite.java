@@ -1,5 +1,7 @@
-package com.sky.env;
+package com.sky.env.service.impl;
 
+import com.sky.env.service.AbstractPropertySourceDetector;
+import com.sky.env.service.PropertySourceDetector;
 import org.springframework.core.env.ConfigurableEnvironment;
 import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Component;
@@ -15,7 +17,6 @@ import java.util.List;
  * 用addBefore方法插入到systemProperties的前面，主要是为了提高匹配属性的优先级。接着需要定
  * 义一个属性探索者的合成类用来装载所有的子类：
  */
-@Component
 public class PropertySourceDetectorComposite implements PropertySourceDetector {
 
     private static final String DEFAULT_SUFFIX = "properties";

@@ -1,10 +1,10 @@
-package com.sky.env;
+package com.sky.env.service.impl;
 
+import com.sky.env.service.AbstractPropertySourceDetector;
 import org.springframework.core.env.ConfigurableEnvironment;
 import org.springframework.core.env.MapPropertySource;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.support.PropertiesLoaderUtils;
-import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.util.Map;
