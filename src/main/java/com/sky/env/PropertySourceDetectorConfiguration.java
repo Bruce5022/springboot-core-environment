@@ -3,13 +3,11 @@ package com.sky.env;
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.context.annotation.ImportBeanDefinitionRegistrar;
-import org.springframework.context.annotation.Lazy;
 import org.springframework.core.env.ConfigurableEnvironment;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.core.io.support.ResourcePatternResolver;
 import org.springframework.core.type.AnnotationMetadata;
-import org.springframework.stereotype.Component;
 
 import java.io.File;
 import java.io.IOException;
@@ -20,8 +18,6 @@ import java.util.Map;
 /**
  * 4.最后添加一个配置类作为入口：
  */
-@Lazy(false)
-@Component
 public class PropertySourceDetectorConfiguration implements ImportBeanDefinitionRegistrar {
 
     private static final String PATH_PREFIX = "profiles";
