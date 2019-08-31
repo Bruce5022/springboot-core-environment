@@ -10,7 +10,6 @@ import java.io.IOException;
 import java.util.Map;
 
 //Properties
-@Component
 public class PropertiesPropertySourceDetector extends AbstractPropertySourceDetector {
 
     @Override

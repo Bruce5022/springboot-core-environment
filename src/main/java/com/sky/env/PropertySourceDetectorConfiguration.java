@@ -3,6 +3,7 @@ package com.sky.env;
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.context.annotation.ImportBeanDefinitionRegistrar;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.core.env.ConfigurableEnvironment;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
@@ -19,6 +20,7 @@ import java.util.Map;
 /**
  * 4.最后添加一个配置类作为入口：
  */
+@Lazy(false)
 @Component
 public class PropertySourceDetectorConfiguration implements ImportBeanDefinitionRegistrar {
 

@@ -15,7 +15,6 @@ import java.io.IOException;
 import java.util.Map;
 
 //Json
-@Component
 public class JsonPropertySourceDetector extends AbstractPropertySourceDetector {
     protected Logger log = LoggerFactory.getLogger(this.getClass());
     private static final JsonParser JSON_PARSER = JsonParserFactory.getJsonParser();

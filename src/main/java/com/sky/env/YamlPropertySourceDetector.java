@@ -13,7 +13,6 @@ import java.io.IOException;
 import java.util.Map;
 
 //Yaml
-@Component
 public class YamlPropertySourceDetector extends AbstractPropertySourceDetector {
     protected Logger log = LoggerFactory.getLogger(this.getClass());
     private static final JsonParser YAML_PARSER = new YamlJsonParser();
